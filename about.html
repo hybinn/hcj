@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹 프로그래밍 데모</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .h1-test {
+        color: rgba(255, 0, 0, 0.7); /*0.0.0.(투명도)*/
+        font-family: 'Courier New', Courier, monospace; /*내 컴퓨터에 a가 없으며녀 b로 적용함 200%도가능*/
+        font-size: 2em; /*em:배율*/
+        font-style: italic;
+        font-weight: bold;
+      }
+    </style>
   </head>
   <body>
     <!-- 메뉴 -->
@@ -44,7 +53,26 @@
         <p>중부대학교 정보보호학과 김현빈</p>
         <p>웹프로그래밍 강의를 진행합니다</p>
         <p>재미있는 강의 같이 해봐요.</p>
+        <p
+          style="
+            text-align: justify;
+            line-height: 3em;
+            text-transform: lowercase;
+            letter-spacing: 0;
+          "
+        >
+          <!--justify : 좌우로 정렬 후 띄어쓰기 조절-->
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi dicta
+          doloremque eum deserunt quam adipisci! Quibusdam, dolore saepe quo
+          dolor exercitationem magni aperiam ab voluptates quos mollitia, vel
+          alias obcaecati.
+          <!--lorem 아무말이나 출력 lorem100 100단어로 아무말-->
+        </p>
         <br />
+
+        <h1 style="color: brown">인라인 스타일 테스트</h1>
+        <h1 class="h1-test">내부 스타일 테스트</h1>
+        <h1>외부 스타일 테스트</h1>
 
         <a href="https://www.youtube.com/" target="_self">Youtube</a><br />
 

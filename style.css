@@ -1,4 +1,5 @@
 * {
+  /*전체 선택자*/
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -16,6 +17,7 @@ ul {
 }
 
 .navbar {
+  /* class선택자 : .으로 시작함 */
   background-color: black;
   color: white; /*글자색*/
   height: 60px; /*background color 높이*/
@@ -57,6 +59,15 @@ ul {
   color: aquamarine;
 }
 
+/* .navbar a:active {
+  color: rgb(128, 165, 230);
+}
+
+.navbar a:focus {
+  touch-action: auto;
+  color: burlywood;
+} */
+
 .navbar .logo {
   font-size: x-large;
   font-weight: bold;
@@ -79,4 +90,28 @@ button:hover {
 .main {
   color: darkblue;
   line-height: 2;
+}
+
+#time {
+  background-color: chartreuse;
+  font-size: larger;
+  font-weight: bolder;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+td,
+th {
+  /* 그룹선택자 */
+  border: 1px solid #cc0606;
+  text-align: left;
+  padding: 8;
+  font-weight: bold;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border: 1px solid black;
+  border-collapse: collapse;
+  width: 450px;
 }

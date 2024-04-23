@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹 프로그래밍 데모</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .box1 {
+        background-color: aqua;
+        width: 400px;
+        height: 200px;
+        text-align: center;
+        border: dotted 5px black; /*solid dotted*/
+        border-width: 4px
+          /*4개 지정시시계방향지정 / 2개만 지정시 위아래 / 좌우로 나눠짐*/;
+        padding: 10px;
+        margin: 20px;
+        border-radius: 10px; /*모서리 둥글게 처리 이것도 border-width랑 같은 메커니즘*/
+      }
+      .box2 {
+        background-color: yellow;
+      }
+    </style>
   </head>
   <body>
     <!-- 메뉴 -->
@@ -32,10 +49,12 @@
     <section class="main">
       <div class="container">
         <h1>Contact. 연락처</h1>
-
+        <div class="box1">
+          <div class="box2">CSS 박스 모델</div>
+        </div>
         <img src="img/man.jpg" width="450px" alt="사진" />
 
-        <table border="1px solid black" width="450px">
+        <table>
           <thead>
             <tr bgcolor="yellow">
               <th>항목</th>
